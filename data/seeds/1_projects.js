@@ -2,14 +2,14 @@ exports.seed = async function (knex) {
     await knex('projects').del()
     await knex('projects').insert([
         {
-            project_name: 'Create table',
-            project_description: 'Initial SQL table creation',
-            project_completed: false
+            project_name: 'Pursue Happiness',
+            project_description: 'Always be grateful for what you have',
+            project_completed: true
         },
         {
-            project_name: 'Seed Table',
-            project_description: 'create seeds for tables',
-            project_completed: true
+            project_name: 'Become famous',
+            project_description: 'Socialize and get out of your comfort zone',
+            project_completed: false
         }
     ])
 }
